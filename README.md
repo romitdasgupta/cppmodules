@@ -1,18 +1,17 @@
 
-# C++ 20 Modules 
+# C++ 20 Modules
 
-## Introduction 
+## Introduction
 
 To build and run this project, you will need:
 
 - A C++ compiler that supports C++20 or higher.
-   - Look for Platform specific requirements below.
+  - Look for Platform specific requirements below.
 - CMake version 3.28 or higher
 - Ninja build system (optional, but recommended)
 
+## For MacOS
 
-
-##  For MacOS
 Ensure that you have clang version 16 or higher. In my case it is 18.1.6
 
 ```
@@ -24,9 +23,9 @@ InstalledDir: /opt/homebrew/Cellar/llvm/18.1.6/bin
 ```
 
 ## For Windows
+
 *TODO*
 ### Build instructions
-
 
 ```
 mkdir build
@@ -35,3 +34,7 @@ CXX=clang++ CC=clang cmake -GNinja ..
 ninja -v
 ./module_test
 ```
+
+### References
+
+- [import CMake; the Experiment is Over!](https://www.kitware.com/import-cmake-the-experiment-is-over/)
