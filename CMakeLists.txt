@@ -13,9 +13,9 @@ add_library(arithmetic)
 target_sources(arithmetic
   PUBLIC
     FILE_SET CXX_MODULES FILES
-      arithmetic.cxx
+      arithmetic.cpp
 )
 # Create an executable
-add_executable(module_test main.cxx)
+add_executable(module_test main.cpp)
 # Link to the library arithmetic
 target_link_libraries(module_test arithmetic)
