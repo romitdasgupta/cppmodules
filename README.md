@@ -35,11 +35,11 @@ $ ./module_test
 ### For Windows
 
 ```
-> mkdir build
-> cd build
-> cmake ..
-> cmake --build .
-> .\Debug\module_test.exe
+> cmake -S . -B build
+> cmake --build build --config Release
+> .\build\Release\module_test.exe
+> cmake --build build --config Debug
+> .\build\Debug\module_test.exe
 ```
 
 ### References
