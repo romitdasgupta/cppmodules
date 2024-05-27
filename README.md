@@ -23,8 +23,13 @@ InstalledDir: /opt/homebrew/Cellar/llvm/18.1.6/bin
 ```
 
 ## For Windows
+```
+mkdir build
+cd build
+cmake ..
+cmake --build .
+```
 
-*TODO*
 ### Build instructions
 
 ```
