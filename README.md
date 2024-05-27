@@ -10,34 +10,36 @@ To build and run this project, you will need:
 - CMake version 3.28 or higher
 - Ninja build system (optional, but recommended)
 
-## For MacOS
+## Build Instructions
+
+### For MacOS
 
 Ensure that you have clang version 16 or higher. In my case it is 18.1.6
 
 ```
-clang++ --version
+$ clang++ --version
 Homebrew clang version 18.1.6
 Target: arm64-apple-darwin23.5.0
 Thread model: posix
 InstalledDir: /opt/homebrew/Cellar/llvm/18.1.6/bin
 ```
 
-## For Windows
 ```
-mkdir build
-cd build
-cmake ..
-cmake --build .
+$ mkdir build
+$ cd build
+$ CXX=clang++ CC=clang cmake -GNinja ..
+$ ninja -v
+$ ./module_test
 ```
 
-### Build instructions
+### For Windows
 
 ```
-mkdir build
-cd build
-CXX=clang++ CC=clang cmake -GNinja ..
-ninja -v
-./module_test
+> mkdir build
+> cd build
+> cmake ..
+> cmake --build .
+> .\Debug\module_test.exe
 ```
 
 ### References
