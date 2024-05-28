@@ -6,20 +6,20 @@
 namespace utils
 {
     template<class T>
-    void print(const T& e)
+    void print(const T& e, std::ostream& os)
     {
-        std::cout << e << '\t';
+        os << e << '\t';
     }
 
     template<class T>
-    void print(const std::vector<T>& v)
+    void print(const std::vector<T>& v, std::ostream& os)
     {
         for (const auto& elem : v)
         {
             print(elem);
         }
 
-        std::cout << '\n';
+        os << '\n';
     }
 
 }
