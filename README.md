@@ -35,10 +35,12 @@ $ ./module_test
 
 ```
 > cmake -S . -B build
+> cmake --build build --config Release
+> .\build\Release\module_example.exe
+> .\build\Release\unit_tests.exe
 > cmake --build build --config Debug
 > .\build\Debug\module_test.exe
-> cmake --build build --config Release
->.\build\Release\module_test.exe
+> .\build\Debug\module_example.exe
 ```
 
 ### References
