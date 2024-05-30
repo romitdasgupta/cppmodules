@@ -1,5 +1,7 @@
 # C++ 20 Modules
 
+[![C/C++ module CI with CMake and Ninja](https://github.com/romitdasgupta/cppmodules/actions/workflows/ci.yml/badge.svg)](https://github.com/romitdasgupta/cppmodules/actions/workflows/ci.yml)
+
 ## Introduction
 
 To build and run this project, you will need:
